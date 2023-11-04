@@ -5,8 +5,10 @@ sc = turtle.Screen()
 t.speed(0)
 sc.bgcolor('black')
 colors = ['red', 'green', 'blue', 'yellow']
-for i in range(400):
+for i in range(200):
     t.color(colors[i%4])
-    t.forward(i*2)
-    t.left(144)
-    t.pensize(i/5 + 1)
+    t.circle(i, steps=4)
+    t.left(45)
+    t.pensize(i/10 + 1)
+
+turtle.mainloop()
