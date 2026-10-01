@@ -17,7 +17,7 @@ def check_disk_full(disk, min_gb, min_percent):
     gigabytes_free = du.free / 2**30
     if percent_free < min_percent or gigabytes_free < min_gb:
         return True
-    print("Line 20 from the local machine.")
+    print("Line 20")
     return False
 
 def main():
